@@ -1,0 +1,101 @@
+#nav-bar
+{
+    position : sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    padding: 0 !important; 
+    
+}
+.navbar-brand img
+{
+    border-radius: 70%;
+    width: 80px;
+    padding: 5px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #fff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.nav-item:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.119) 30%, #000 50%, rgba(0, 0, 0, 0.411) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler
+{
+    border: none!important;
+    box-shadow: none !important;
+}
+
+/* main */
+.banner-img{
+    float: right;
+    position: relative;
+    left: 130px;
+}
+.mySlides{
+    position: relative;
+    left:170px;
+}
+@media only screen and (max-width: 768px) {
+    /* Adjust the styles as per your requirements for smaller screens */
+  
+    /* For example, you can make the navigation bar and logo smaller */
+    .navbar-brand img {
+      width: 50px;
+      padding: 2px;
+    }
+  
+    /* Make the banner video responsive */
+    #banner video {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Adjust font sizes or other elements as needed */
+    h2 {
+      font-size: 24px;
+    }
+    .slideimg{
+        display: none;
+    }
+    .banner-img{
+        display: none;
+    }
+  
+    /* Hide the testimonial images on smaller screens */
+    .row-testimonial .testimonial .user-img {
+      display: none;
+    }
+  
+    /* Make the footer text smaller */
+    .footer-box p {
+      font-size: 14px;
+    }
+}
